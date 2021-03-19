@@ -1,0 +1,187 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* Navbar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* Navbar Logo */
+#logo{
+  margin: 6px 0px;
+}
+#logo img{
+  margin: -33px 10px;
+  height: 120px;
+}
+/* Navbar Bg */
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* Navabar List */
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-family: 'Baloo Bhai 2', cursive; 
+}
+#navbar ul li{
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 3px 22px;
+}
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+/* Home Section */
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 610px;
+  align-items: center;
+  justify-content: center;
+}
+#home::before{
+  content: "";
+  background:url('https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_1280.jpg') no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity:0.89;
+}
+/* Utility Classes */
+.h-primary{
+  color: white;
+  text-align: center;
+  font-size: 3.8rem;
+  padding:12px;
+  font-family: 'Bree Serif', serif;
+}
+#black{
+  color: black;
+}
+.para{
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Bree Serif', serif;
+}
+.btn{
+  padding: 6px 20px;
+  border:2px solid white;
+  background-color: brown;
+  color: white;
+  margin:17px;
+  font-size: 1.5rem;
+  border-radius:12px;
+  cursor: pointer;
+}
+.h-secondary{
+  font-size: 2.5rem;
+  padding: 12px;
+  text-align: center;
+}
+/* Services Section */
+#services{
+  margin:34px;
+  display: flex;
+}
+.box{
+  border: 2px solid brown;
+  padding:34px;
+  margin:3px 7px;
+  border-radius: 23px;
+  background-color: #f2f2f2;
+  align-items: center;
+}
+.box img{
+  height: 250px;
+  display: block;
+  margin: auto;
+}
+#client-section{
+  height: 344px;
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500) no-repeat center center/cover;
+  width: 100%;
+  height: 54%;
+  z-index: -1;
+  opacity: 0.3;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img{
+  height: 145px;
+}
+.client-item{
+  padding: 34px;
+}
+/* Contact Us Section */
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index:-1;
+  opacity: 0.7;
+  background: url('https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523__480.jpg') no-repeat center center/cover;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius:9px;
+  border: 1px solid rgb(66, 65, 65);
+  font-size: 1.1rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Bree Serif', serif;
+}
+/* Footer */
+.footer{
+  background-color: black; 
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+}
+hr{
+  border: 0px;
+  margin-bottom: -11px;
+}
