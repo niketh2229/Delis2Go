@@ -2,11 +2,15 @@
   margin: 0px;
   padding: 0px;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* Navbar */
 #navbar{
   display: flex;
   align-items: center;
-  position: absolute;
+  position: sticky;
+  z-index: 100;
   top: 0px;
   left: 0px;
 }
@@ -26,7 +30,7 @@
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 /* Navabar List */
 #navbar ul {
@@ -119,14 +123,14 @@
   margin: auto;
 }
 #client-section{
-  height: 344px;
+  position: relative;
 }
 #client-section::before{
   content: "";
   position: absolute;
   background: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500) no-repeat center center/cover;
   width: 100%;
-  height: 54%;
+  height: 96%;
   z-index: -1;
   opacity: 0.3;
 }
