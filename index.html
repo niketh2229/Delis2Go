@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="phone.css">
 </head>
 <body>
     <nav id="navbar">
@@ -16,10 +16,10 @@
             <img src="https://i.postimg.cc/gkt9YS5v/Delis2Go.png" alt="Delis2Go">
         </div>
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">About Us</a></li>
-            <li class="item"><a href="#">Contact Us</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
     <section id="home">
@@ -28,7 +28,7 @@
         <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <button class="btn">Order Now</button>
     </section>
-    <section class="services-container">
+    <section id="services-container">
         <h1 class="h-primary" id="black">Our Services</h1>
         <div id="services">
             <div class="box">
@@ -84,6 +84,7 @@
                 <div class="form-group">
                     <label for="name">Message: </label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button class="btn">Submit</button>
                 </div>
             </form>
         </div>
